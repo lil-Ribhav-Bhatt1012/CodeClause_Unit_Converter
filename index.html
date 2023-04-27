@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <div class="converter">
+            <input type="number" id="inputValue" placeholder="Enter value">
+<select id="inputUnit">
+    <optgroup label="Length">
+        <option value="meters">Meters</option>
+        <option value="kilometers">Kilometers</option>
+        <option value="centimeters">Centimeters</option>
+        <option value="millimeters">Millimeters</option>
+        <option value="miles">Miles</option>
+        <option value="inches">Inches</option>
+        <option value="feet">Feet</option>
+    </optgroup>
+    <optgroup label="Weight">
+        <option value="grams">Grams</option>
+        <option value="kilograms">Kilograms</option>
+        <option value="pounds">Pounds</option>
+        <option value="ounces">Ounces</option>
+    </optgroup>
+    <optgroup label="Volume">
+                <option value="liters">Liters</option>
+        <option value="milliliters">Milliliters</option>
+        <option value="gallons">Gallons</option>
+    </optgroup>
+    <optgroup label="Temperature">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+    </optgroup>
+</select>
+<span>to</span>
+<select id="outputUnit">
+    <optgroup label="Length">
+        <option value="meters">Meters</option>
+        <option value="kilometers">Kilometers</option>
+        <option value="centimeters">Centimeters</option>
+        <option value="millimeters">Millimeters</option>
+        <option value="miles">Miles</option>
+        <option value="inches">Inches</option>
+        <option value="feet">Feet</option>
+    </optgroup>
+    <optgroup label="Weight">
+        <option value="grams">Grams</option>
+        <option value="kilograms">Kilograms</option>
+        <option value="pounds">Pounds</option>
+        <option value="ounces">Ounces</option>
+    </optgroup>
+    <optgroup label="Volume">
+        <option value="liters">Liters</option>
+        <option value="milliliters">Milliliters</option>
+        <option value="gallons">Gallons</option>
+    </optgroup>
+    <optgroup label="Temperature">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+    </optgroup>
+</select>
+
+
+            <input type="number" id="outputValue" placeholder="Converted value" readonly>
+        </div>
+        <button id="convertBtn">Convert</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
